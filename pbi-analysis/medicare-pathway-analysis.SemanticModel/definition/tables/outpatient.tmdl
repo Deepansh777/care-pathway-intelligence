@@ -1,0 +1,1426 @@
+table outpatient
+	lineageTag: 54633457-8d33-406e-b6c4-1fcb8a0079a6
+
+	column BENE_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 08be458f-ab38-4730-a7a6-41cc88263ef9
+		summarizeBy: count
+		sourceColumn: BENE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: c9cf5b87-427b-4e5a-b869-ceef1cbdb199
+		summarizeBy: count
+		sourceColumn: CLM_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column NCH_NEAR_LINE_REC_IDENT_CD
+		dataType: string
+		lineageTag: 45526be9-0a91-479f-8333-2eed50a4670a
+		summarizeBy: none
+		sourceColumn: NCH_NEAR_LINE_REC_IDENT_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column NCH_CLM_TYPE_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: 30f26f69-98e9-4275-8d8b-45d3c7e63280
+		summarizeBy: sum
+		sourceColumn: NCH_CLM_TYPE_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_FROM_DT
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 14a792df-364f-487c-a714-93277b620966
+		summarizeBy: none
+		sourceColumn: CLM_FROM_DT
+
+		variation Variation
+			isDefault
+			relationship: faa51a11-9c51-48bd-a99e-23b33d6961b1
+			defaultHierarchy: LocalDateTable_8cda6035-10cc-4ff6-bf0e-bcee857d40e2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CLM_THRU_DT
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 653e9e66-aca0-4181-b3bd-ae1100338f73
+		summarizeBy: none
+		sourceColumn: CLM_THRU_DT
+
+		variation Variation
+			isDefault
+			relationship: 7a96b4c2-f0bc-4031-9988-f66b291bf643
+			defaultHierarchy: LocalDateTable_1b7656d7-5cd6-4f92-9223-b76c49b3ec00.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NCH_WKLY_PROC_DT
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6eb9c992-a454-40da-b077-852209e35e49
+		summarizeBy: none
+		sourceColumn: NCH_WKLY_PROC_DT
+
+		variation Variation
+			isDefault
+			relationship: 8e5b1b64-1ce3-40ee-93fc-81433724a22e
+			defaultHierarchy: LocalDateTable_8033439a-f1e5-4287-a381-182343366351.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column FI_CLM_PROC_DT
+		dataType: string
+		lineageTag: 24886d6c-d73d-4d91-a2f5-31109e4b2778
+		summarizeBy: none
+		sourceColumn: FI_CLM_PROC_DT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLAIM_QUERY_CODE
+		dataType: int64
+		formatString: 0
+		lineageTag: 6839edf8-353f-4009-b761-abc2a736a11a
+		summarizeBy: sum
+		sourceColumn: CLAIM_QUERY_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRVDR_NUM
+		dataType: string
+		lineageTag: 1acf6ae2-daf3-43aa-8930-39197bbae14a
+		summarizeBy: none
+		sourceColumn: PRVDR_NUM
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_FAC_TYPE_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: a971d734-6eb5-4a94-97de-333fbf9c8b23
+		summarizeBy: sum
+		sourceColumn: CLM_FAC_TYPE_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_SRVC_CLSFCTN_TYPE_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: edd8fd81-29e4-45e7-922c-04ccc50a9fba
+		summarizeBy: sum
+		sourceColumn: CLM_SRVC_CLSFCTN_TYPE_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_FREQ_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: c229457b-76d4-415e-b3f7-188e38e37881
+		summarizeBy: sum
+		sourceColumn: CLM_FREQ_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column FI_NUM
+		dataType: string
+		lineageTag: 617840a9-12b6-460b-ab8d-3ceb88e098f4
+		summarizeBy: none
+		sourceColumn: FI_NUM
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_MDCR_NON_PMT_RSN_CD
+		dataType: string
+		lineageTag: 13c45530-e2d8-4886-9a64-fef6c893c17e
+		summarizeBy: none
+		sourceColumn: CLM_MDCR_NON_PMT_RSN_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_PMT_AMT
+		dataType: double
+		lineageTag: e3252f9b-8ba7-44f5-98ed-369cdb09ee7c
+		summarizeBy: sum
+		sourceColumn: CLM_PMT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NCH_PRMRY_PYR_CLM_PD_AMT
+		dataType: double
+		lineageTag: 93a5a90b-a94b-4fa1-92bf-e3a2805f7a34
+		summarizeBy: sum
+		sourceColumn: NCH_PRMRY_PYR_CLM_PD_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NCH_PRMRY_PYR_CD
+		dataType: string
+		lineageTag: 51df019a-025a-4cff-84bf-8246e14aa036
+		summarizeBy: none
+		sourceColumn: NCH_PRMRY_PYR_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRVDR_STATE_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: 4390eeab-eb24-4fab-ab19-e3aaaebe1bd9
+		summarizeBy: sum
+		sourceColumn: PRVDR_STATE_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ORG_NPI_NUM
+		dataType: int64
+		formatString: 0
+		lineageTag: 267cfa94-fe6d-482b-9fc6-8659a2b281b0
+		summarizeBy: sum
+		sourceColumn: ORG_NPI_NUM
+
+		annotation SummarizationSetBy = Automatic
+
+	column AT_PHYSN_UPIN
+		dataType: string
+		lineageTag: 1b6e91b6-01c6-401d-96e5-4cf5a0ae870f
+		summarizeBy: none
+		sourceColumn: AT_PHYSN_UPIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column AT_PHYSN_NPI
+		dataType: int64
+		formatString: 0
+		lineageTag: a656c48f-1431-4eb1-b930-fe739c6d9e2e
+		summarizeBy: sum
+		sourceColumn: AT_PHYSN_NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column OP_PHYSN_UPIN
+		dataType: string
+		lineageTag: eb84f464-4cff-4456-94c7-64cf1a28decf
+		summarizeBy: none
+		sourceColumn: OP_PHYSN_UPIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column OP_PHYSN_NPI
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d1638eb-9b11-4551-9237-da7a530338e8
+		summarizeBy: sum
+		sourceColumn: OP_PHYSN_NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column OT_PHYSN_UPIN
+		dataType: string
+		lineageTag: d361784e-0f32-491c-b425-6427bf1ecab7
+		summarizeBy: none
+		sourceColumn: OT_PHYSN_UPIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column OT_PHYSN_NPI
+		dataType: string
+		lineageTag: 2bf2512a-90b3-427a-a99f-41682c3eef35
+		summarizeBy: none
+		sourceColumn: OT_PHYSN_NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_MCO_PD_SW
+		dataType: int64
+		formatString: 0
+		lineageTag: 43631140-58e8-4910-829f-455ba474d73c
+		summarizeBy: sum
+		sourceColumn: CLM_MCO_PD_SW
+
+		annotation SummarizationSetBy = Automatic
+
+	column PTNT_DSCHRG_STUS_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: 6633f753-f300-4491-ab71-6c1408e4429b
+		summarizeBy: sum
+		sourceColumn: PTNT_DSCHRG_STUS_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_TOT_CHRG_AMT
+		dataType: double
+		lineageTag: 46ba493e-e21c-4b53-9f6d-73f3e00943a8
+		summarizeBy: sum
+		sourceColumn: CLM_TOT_CHRG_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NCH_BENE_BLOOD_DDCTBL_LBLTY_AM
+		dataType: int64
+		formatString: 0
+		lineageTag: 1511c093-5353-4b23-a465-b46e2f09210c
+		summarizeBy: sum
+		sourceColumn: NCH_BENE_BLOOD_DDCTBL_LBLTY_AM
+
+		annotation SummarizationSetBy = Automatic
+
+	column NCH_PROFNL_CMPNT_CHRG_AMT
+		dataType: int64
+		formatString: 0
+		lineageTag: c49c6f0d-12f6-42aa-99b6-5f1015a34c30
+		summarizeBy: sum
+		sourceColumn: NCH_PROFNL_CMPNT_CHRG_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRNCPAL_DGNS_CD
+		dataType: string
+		lineageTag: b4e34a1c-d4ca-4a6d-8abd-04d1e5bb7408
+		summarizeBy: none
+		sourceColumn: PRNCPAL_DGNS_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD1
+		dataType: string
+		lineageTag: f738d631-daee-4cee-a2f7-581f32c2890b
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD2
+		dataType: string
+		lineageTag: b437e044-e724-4d50-89d6-c10a4a34ae02
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD2
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD3
+		dataType: string
+		lineageTag: f40b47fa-fc9d-479d-bd11-bf585263b210
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD4
+		dataType: string
+		lineageTag: 0064e49b-a0ca-4783-8855-bd8b3227f654
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD4
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD5
+		dataType: string
+		lineageTag: cdef37c1-c1b3-405d-ad06-87926c069538
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD5
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD6
+		dataType: string
+		lineageTag: fa3a175d-b447-4bb3-9533-714d3cd9c563
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD6
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD7
+		dataType: string
+		lineageTag: 80a671bd-8fcc-408e-95ff-085274dfc0cc
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD7
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD8
+		dataType: string
+		lineageTag: 72ac657a-4c59-4c52-8931-342304437aa3
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD8
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD9
+		dataType: string
+		lineageTag: d66395d9-e1a1-42b2-baa3-c418a002a46f
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD9
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD10
+		dataType: string
+		lineageTag: e98202a7-19ba-4127-afe6-0741fc161219
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD10
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD11
+		dataType: string
+		lineageTag: f329b4de-f9ca-4716-a0b2-4b1879d32143
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD11
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD12
+		dataType: string
+		lineageTag: 24e44646-c6f6-4ecf-9ae6-95e2a69383c8
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD12
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD13
+		dataType: string
+		lineageTag: 291cc427-6ab2-4967-bfc7-108f6061d29d
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD13
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD14
+		dataType: string
+		lineageTag: 00766473-98ad-42d4-8fd1-3241f8606df3
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD14
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD15
+		dataType: string
+		lineageTag: 102ec896-e02c-4258-bc5a-f3b619bf61b7
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD15
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD16
+		dataType: string
+		lineageTag: 45022c79-ac2d-424d-ab3f-ed09b6d1d8ff
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD16
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD17
+		dataType: string
+		lineageTag: 18ccbef0-4fd1-4534-869b-188bd7a14ab0
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD17
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD18
+		dataType: string
+		lineageTag: c4556fda-1852-4158-a2a2-6b63e293d033
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD18
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD19
+		dataType: string
+		lineageTag: 06a88ee6-0d75-4f10-939e-03537f5e12a4
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD19
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD20
+		dataType: string
+		lineageTag: c95561a4-c8da-4a56-9a54-b0ff8ef94c8b
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD20
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD21
+		dataType: string
+		lineageTag: 1daae4af-ccbc-47f2-a713-a2274101a6a6
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD21
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD22
+		dataType: string
+		lineageTag: 2c0a7620-f36a-4ec1-842c-51618802e2a9
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD22
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD23
+		dataType: string
+		lineageTag: f23ced9e-62b4-451d-bd78-beb22a7cbe8c
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD23
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD24
+		dataType: string
+		lineageTag: 560f8dad-3bd2-4fc9-b856-98a6ac81b4ea
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD24
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_CD25
+		dataType: string
+		lineageTag: 43db9e99-b060-49d2-879b-f067bbbfc766
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_CD25
+
+		annotation SummarizationSetBy = Automatic
+
+	column FST_DGNS_E_CD
+		dataType: string
+		lineageTag: 52d13dc2-bbce-48ad-a68b-cc7f48d61afb
+		summarizeBy: none
+		sourceColumn: FST_DGNS_E_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD1
+		dataType: string
+		lineageTag: 13ce9e07-21ba-4369-bc03-09091bd1b151
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD2
+		dataType: string
+		lineageTag: 087f0ec0-4371-496a-98f2-b6c5bf22f013
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD2
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD3
+		dataType: string
+		lineageTag: fcc02b1a-3e7e-4592-b816-26c185222e7b
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD4
+		dataType: string
+		lineageTag: 2740be78-5f6b-4cc0-824c-b5477ed57ee1
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD4
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD5
+		dataType: string
+		lineageTag: fce1715e-ca69-44d5-834b-bdc0041685ff
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD5
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD6
+		dataType: string
+		lineageTag: d6f88d9b-afe4-43ca-bc63-cd69e4e5425a
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD6
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD7
+		dataType: string
+		lineageTag: b9b45d44-e291-4e5a-871e-a89d60e6ff61
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD7
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD8
+		dataType: string
+		lineageTag: bf147295-ab06-4a05-8538-fe9c0dff2ee2
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD8
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD9
+		dataType: string
+		lineageTag: b6b95090-8ded-40ac-8365-231a2ca6b4dd
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD9
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD10
+		dataType: string
+		lineageTag: c337ea87-798c-4353-9049-fe873a43fe93
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD10
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD11
+		dataType: string
+		lineageTag: cf57de84-908f-44e9-9327-87f1f7dfbbb0
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD11
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_DGNS_E_CD12
+		dataType: string
+		lineageTag: cc4e9a61-f369-4349-9295-aec3ee810725
+		summarizeBy: none
+		sourceColumn: ICD_DGNS_E_CD12
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD1
+		dataType: string
+		lineageTag: 40269721-6211-4000-adfd-41d1dd64fae4
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD1
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT1
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d21b88bb-3a23-41b5-a46a-e9f1decff003
+		summarizeBy: none
+		sourceColumn: PRCDR_DT1
+
+		variation Variation
+			isDefault
+			relationship: 192243e0-c756-4086-9362-c50d71be0edb
+			defaultHierarchy: LocalDateTable_6c0b9d63-d63f-4aac-84b6-1e0746301c6c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ICD_PRCDR_CD2
+		dataType: string
+		lineageTag: 73292bb3-246c-4599-ac19-c05d175abb07
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD2
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT2
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cceee8be-cbfd-4ae4-967f-178e3a97aa46
+		summarizeBy: none
+		sourceColumn: PRCDR_DT2
+
+		variation Variation
+			isDefault
+			relationship: 9f2c6e80-93df-4921-9e2a-721ca2bc2f6d
+			defaultHierarchy: LocalDateTable_efb4280f-11dd-4804-a847-fae3cb266fb5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ICD_PRCDR_CD3
+		dataType: string
+		lineageTag: 70031453-ace0-47ab-8fe5-84e04a1f6642
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT3
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c2a2b57b-c369-46c3-ab85-9a1c6ce4797f
+		summarizeBy: none
+		sourceColumn: PRCDR_DT3
+
+		variation Variation
+			isDefault
+			relationship: 0a768b12-efbb-4944-a556-ee0a887e8c5c
+			defaultHierarchy: LocalDateTable_b2e2cd63-33d2-498f-b8ca-4b63e76e2dbd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ICD_PRCDR_CD4
+		dataType: string
+		lineageTag: c0ab16ab-acc0-45cb-8272-76ce365e75b1
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD4
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT4
+		dataType: string
+		lineageTag: 5163e2a4-245e-45d4-9c62-591f463d5f2d
+		summarizeBy: none
+		sourceColumn: PRCDR_DT4
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD5
+		dataType: string
+		lineageTag: 46a921d9-a5a6-414e-b615-e33f1f64327a
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD5
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT5
+		dataType: string
+		lineageTag: 335a6bd7-8648-484a-80ee-b722d492e785
+		summarizeBy: none
+		sourceColumn: PRCDR_DT5
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD6
+		dataType: string
+		lineageTag: 6561b0cc-7196-45a6-8c7e-b3e3807099d9
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD6
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT6
+		dataType: string
+		lineageTag: 6b8c632d-435d-4720-87e6-dd18711d6162
+		summarizeBy: none
+		sourceColumn: PRCDR_DT6
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD7
+		dataType: string
+		lineageTag: ef507d24-1ca0-4192-94b6-aa9c869148cf
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD7
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT7
+		dataType: string
+		lineageTag: 5a3f4f64-674a-4e17-9d5a-ca8d8b9d78ea
+		summarizeBy: none
+		sourceColumn: PRCDR_DT7
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD8
+		dataType: string
+		lineageTag: 1f60d7e2-fbde-4f29-b69d-e748ac890421
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD8
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT8
+		dataType: string
+		lineageTag: c385fa88-63d8-4755-b471-87597d5e2369
+		summarizeBy: none
+		sourceColumn: PRCDR_DT8
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD9
+		dataType: string
+		lineageTag: cd421117-9f05-4bb9-b994-622463f8ada3
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD9
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT9
+		dataType: string
+		lineageTag: d01e450c-010b-40e5-b344-ab1debf38b0d
+		summarizeBy: none
+		sourceColumn: PRCDR_DT9
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD10
+		dataType: string
+		lineageTag: 6f245c7f-e892-4402-9136-5d052d7a8a97
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD10
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT10
+		dataType: string
+		lineageTag: 4b088890-9aff-4359-a9d0-1cd5da87b211
+		summarizeBy: none
+		sourceColumn: PRCDR_DT10
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD11
+		dataType: string
+		lineageTag: 36ad523b-f85d-4fd2-82df-5c49fcf6b8e6
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD11
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT11
+		dataType: string
+		lineageTag: fcacc5ce-a90d-49bb-9827-2ce36077ab2f
+		summarizeBy: none
+		sourceColumn: PRCDR_DT11
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD12
+		dataType: string
+		lineageTag: dee1828f-c0d4-40ee-923c-1c5fefb72abe
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD12
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT12
+		dataType: string
+		lineageTag: cabfde30-ab64-40e7-92a3-22b44ad45e56
+		summarizeBy: none
+		sourceColumn: PRCDR_DT12
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD13
+		dataType: string
+		lineageTag: 38d4cd8a-1768-45b7-8e14-a39897c58c7a
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD13
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT13
+		dataType: string
+		lineageTag: b09e3010-68b3-483f-a591-69d9db80b1a7
+		summarizeBy: none
+		sourceColumn: PRCDR_DT13
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD14
+		dataType: string
+		lineageTag: 3e6deeda-eb56-4d08-b2cb-bd26bd3e54db
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD14
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT14
+		dataType: string
+		lineageTag: 8099540f-219d-43df-9cd1-3b7c6201609f
+		summarizeBy: none
+		sourceColumn: PRCDR_DT14
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD15
+		dataType: string
+		lineageTag: 81345610-c1a2-43b9-9202-2797f21630a3
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD15
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT15
+		dataType: string
+		lineageTag: 250e8b99-9f9f-4de6-a7e5-94fc70297a07
+		summarizeBy: none
+		sourceColumn: PRCDR_DT15
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD16
+		dataType: string
+		lineageTag: a1d5dcaa-40d4-49e1-903b-fbf932539868
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD16
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT16
+		dataType: string
+		lineageTag: 2438d258-6229-4c66-85d9-fdd1a8f98600
+		summarizeBy: none
+		sourceColumn: PRCDR_DT16
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD17
+		dataType: string
+		lineageTag: 01994b95-b95c-4931-aae5-a47c9fc9b1fc
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD17
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT17
+		dataType: string
+		lineageTag: eb3e346a-a74b-4ac7-80ee-4aad963fc926
+		summarizeBy: none
+		sourceColumn: PRCDR_DT17
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD18
+		dataType: string
+		lineageTag: 852af7c6-10ae-4bce-a21d-1815c8b886ae
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD18
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT18
+		dataType: string
+		lineageTag: bc6517f2-44ed-4c60-825d-1dc4407d935f
+		summarizeBy: none
+		sourceColumn: PRCDR_DT18
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD19
+		dataType: string
+		lineageTag: b44c7cb9-48e3-4005-836e-f8cda2cecded
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD19
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT19
+		dataType: string
+		lineageTag: 91fcab54-a46f-4c48-a156-fe21fb28a642
+		summarizeBy: none
+		sourceColumn: PRCDR_DT19
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD20
+		dataType: string
+		lineageTag: e93009da-76de-41a9-9972-f10bd2a0159e
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD20
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT20
+		dataType: string
+		lineageTag: dd939808-0ae6-4c03-997e-e3662499cc77
+		summarizeBy: none
+		sourceColumn: PRCDR_DT20
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD21
+		dataType: string
+		lineageTag: da3a6c0f-5f6a-4ef0-9147-87704126893e
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD21
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT21
+		dataType: string
+		lineageTag: b050a6f7-7fc1-4147-8f9a-522898906533
+		summarizeBy: none
+		sourceColumn: PRCDR_DT21
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD22
+		dataType: string
+		lineageTag: ce6d2742-7539-4249-a788-5a33a180a832
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD22
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT22
+		dataType: string
+		lineageTag: cbb42f7f-2cec-41cd-81ab-ed138bc8d51f
+		summarizeBy: none
+		sourceColumn: PRCDR_DT22
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD23
+		dataType: string
+		lineageTag: 330e2efb-7ec9-4e21-94c5-b3012d16fe2c
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD23
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT23
+		dataType: string
+		lineageTag: 449c0b97-1a2a-4cc1-baf3-a4b1386bcd48
+		summarizeBy: none
+		sourceColumn: PRCDR_DT23
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD24
+		dataType: string
+		lineageTag: 1e9c2fb7-b5e6-4745-9afd-8f9f6e2f5fa4
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD24
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT24
+		dataType: string
+		lineageTag: 96094454-91ff-40f5-91fa-28cb19dbdd56
+		summarizeBy: none
+		sourceColumn: PRCDR_DT24
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICD_PRCDR_CD25
+		dataType: string
+		lineageTag: 2165a203-39d3-4ee2-87ca-88c7d7cf7a44
+		summarizeBy: none
+		sourceColumn: ICD_PRCDR_CD25
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRCDR_DT25
+		dataType: string
+		lineageTag: 31a01c5c-7cf4-4bdd-a794-bc44211624c0
+		summarizeBy: none
+		sourceColumn: PRCDR_DT25
+
+		annotation SummarizationSetBy = Automatic
+
+	column RSN_VISIT_CD1
+		dataType: string
+		lineageTag: 55caee8e-7ed1-4a28-9f4a-c8fc1265dc8f
+		summarizeBy: none
+		sourceColumn: RSN_VISIT_CD1
+
+		annotation SummarizationSetBy = Automatic
+
+	column RSN_VISIT_CD2
+		dataType: string
+		lineageTag: e162ac52-9bdc-4b68-82d1-46d44deef8ef
+		summarizeBy: none
+		sourceColumn: RSN_VISIT_CD2
+
+		annotation SummarizationSetBy = Automatic
+
+	column RSN_VISIT_CD3
+		dataType: string
+		lineageTag: 707e0562-bc1f-4123-a9d1-4311a014c743
+		summarizeBy: none
+		sourceColumn: RSN_VISIT_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column NCH_BENE_PTB_DDCTBL_AMT
+		dataType: double
+		lineageTag: 743bdcd2-ec29-49d5-9ed2-c88f53508714
+		summarizeBy: sum
+		sourceColumn: NCH_BENE_PTB_DDCTBL_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NCH_BENE_PTB_COINSRNC_AMT
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f8b4569-2e0a-4938-bde3-7a238b5c20d2
+		summarizeBy: sum
+		sourceColumn: NCH_BENE_PTB_COINSRNC_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_OP_PRVDR_PMT_AMT
+		dataType: double
+		lineageTag: 0bb63f5e-0c00-45f0-8217-91c2e0f8ac05
+		summarizeBy: sum
+		sourceColumn: CLM_OP_PRVDR_PMT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CLM_OP_BENE_PMT_AMT
+		dataType: int64
+		formatString: 0
+		lineageTag: 55170858-7d08-4d1c-8441-73ff3d560577
+		summarizeBy: sum
+		sourceColumn: CLM_OP_BENE_PMT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLM_LINE_NUM
+		dataType: int64
+		formatString: 0
+		lineageTag: 91e7dc6c-24ae-4518-b9ac-784783b363f8
+		summarizeBy: sum
+		sourceColumn: CLM_LINE_NUM
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR
+		dataType: int64
+		formatString: 0
+		lineageTag: a5dbbf46-e583-4f65-97cb-90a754c79dfa
+		summarizeBy: sum
+		sourceColumn: REV_CNTR
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_DT
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7eb202df-beba-4f71-a83b-201208953aee
+		summarizeBy: none
+		sourceColumn: REV_CNTR_DT
+
+		variation Variation
+			isDefault
+			relationship: a8f38472-7826-46c1-aa13-0a855935f4b4
+			defaultHierarchy: LocalDateTable_239f30e5-ab9a-4db3-90cc-efb6959e831c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column REV_CNTR_1ST_ANSI_CD
+		dataType: string
+		lineageTag: ae699c4d-699f-4542-ab4b-30b0be6acf1c
+		summarizeBy: none
+		sourceColumn: REV_CNTR_1ST_ANSI_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_2ND_ANSI_CD
+		dataType: string
+		lineageTag: 39814e4c-1e84-4822-90bf-8072d65825b2
+		summarizeBy: none
+		sourceColumn: REV_CNTR_2ND_ANSI_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_3RD_ANSI_CD
+		dataType: string
+		lineageTag: 72fa38fe-364a-4564-903e-cc5b3587051d
+		summarizeBy: none
+		sourceColumn: REV_CNTR_3RD_ANSI_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_4TH_ANSI_CD
+		dataType: string
+		lineageTag: b046e6b2-3df5-4ca8-a3c4-3442e86bd275
+		summarizeBy: none
+		sourceColumn: REV_CNTR_4TH_ANSI_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_APC_HIPPS_CD
+		dataType: string
+		lineageTag: 5232f9c0-7827-4976-81b8-081df0cfed7f
+		summarizeBy: none
+		sourceColumn: REV_CNTR_APC_HIPPS_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column HCPCS_CD
+		dataType: string
+		lineageTag: 3cebbd8e-ea46-4e27-baa2-1c0cd0961428
+		summarizeBy: none
+		sourceColumn: HCPCS_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column HCPCS_1ST_MDFR_CD
+		dataType: string
+		lineageTag: b84aad49-fc93-4179-977c-ff814c97490a
+		summarizeBy: none
+		sourceColumn: HCPCS_1ST_MDFR_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column HCPCS_2ND_MDFR_CD
+		dataType: string
+		lineageTag: 111ff4f6-ec92-40f5-87fb-4b866b66ad7a
+		summarizeBy: none
+		sourceColumn: HCPCS_2ND_MDFR_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_PMT_MTHD_IND_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: d570cb99-a2bb-413f-929f-5707f854b198
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_PMT_MTHD_IND_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_DSCNT_IND_CD
+		dataType: string
+		lineageTag: cd529167-c809-4ebb-8b64-853c4b8fd190
+		summarizeBy: none
+		sourceColumn: REV_CNTR_DSCNT_IND_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_PACKG_IND_CD
+		dataType: string
+		lineageTag: 7171effa-a24b-415c-b06f-1e0debb7581d
+		summarizeBy: none
+		sourceColumn: REV_CNTR_PACKG_IND_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_OTAF_PMT_CD
+		dataType: string
+		lineageTag: 7274439a-87f2-4bea-9dac-b0bdf06f6b3f
+		summarizeBy: none
+		sourceColumn: REV_CNTR_OTAF_PMT_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_IDE_NDC_UPC_NUM
+		dataType: string
+		lineageTag: 04a6b752-5601-4433-86d1-306f5b643a47
+		summarizeBy: none
+		sourceColumn: REV_CNTR_IDE_NDC_UPC_NUM
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_UNIT_CNT
+		dataType: int64
+		formatString: 0
+		lineageTag: 532be234-682c-43ec-bec8-34121c4cb5e5
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_UNIT_CNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_RATE_AMT
+		dataType: double
+		lineageTag: c9df0985-9c92-45da-9693-f4b91f2963cd
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_RATE_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_BLOOD_DDCTBL_AMT
+		dataType: int64
+		formatString: 0
+		lineageTag: b5216551-8c29-47d3-a43c-c51226a139f8
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_BLOOD_DDCTBL_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_CASH_DDCTBL_AMT
+		dataType: double
+		lineageTag: a84d446a-d10c-49bd-a1a8-bb2832888c84
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_CASH_DDCTBL_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_COINSRNC_WGE_ADJSTD_C
+		dataType: double
+		lineageTag: 6c05a7f0-8b8c-4853-8dd4-3b759c5561bc
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_COINSRNC_WGE_ADJSTD_C
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_RDCD_COINSRNC_AMT
+		dataType: double
+		lineageTag: 93846819-c7c6-4e15-af68-8cf5fe1110cb
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_RDCD_COINSRNC_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_1ST_MSP_PD_AMT
+		dataType: int64
+		formatString: 0
+		lineageTag: aa36c759-e8d8-4452-b47a-ef0e0fd60d47
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_1ST_MSP_PD_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_2ND_MSP_PD_AMT
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c6b0331-20f9-42b4-a059-0377151ec4e0
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_2ND_MSP_PD_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_PRVDR_PMT_AMT
+		dataType: double
+		lineageTag: b2bf2a86-c08d-42c0-910c-79cf74ab5a93
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_PRVDR_PMT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_BENE_PMT_AMT
+		dataType: int64
+		formatString: 0
+		lineageTag: 180b4a16-d530-4008-9b45-8b977d5ea890
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_BENE_PMT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_PTNT_RSPNSBLTY_PMT
+		dataType: double
+		lineageTag: ee47557f-bb4e-4fa2-98fb-6bd17221c195
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_PTNT_RSPNSBLTY_PMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_PMT_AMT_AMT
+		dataType: double
+		lineageTag: d7e4b226-6085-4427-913b-f7e94d1e345d
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_PMT_AMT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_TOT_CHRG_AMT
+		dataType: double
+		lineageTag: a3e8a306-bd24-4ff1-be7e-70914b4aea55
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_TOT_CHRG_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_NCVRD_CHRG_AMT
+		dataType: double
+		lineageTag: 494ffd78-58cf-49ae-9627-4b8f4eaa5bec
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_NCVRD_CHRG_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REV_CNTR_STUS_IND_CD
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a24cb60-2b86-478d-9a5b-c857001bf94b
+		summarizeBy: sum
+		sourceColumn: REV_CNTR_STUS_IND_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_NDC_QTY
+		dataType: string
+		lineageTag: 6253dd22-5020-42b7-b73a-de73aef63c69
+		summarizeBy: none
+		sourceColumn: REV_CNTR_NDC_QTY
+
+		annotation SummarizationSetBy = Automatic
+
+	column REV_CNTR_NDC_QTY_QLFR_CD
+		dataType: string
+		lineageTag: 1c429c1e-7890-41a8-850a-0b1f3de6762e
+		summarizeBy: none
+		sourceColumn: REV_CNTR_NDC_QTY_QLFR_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column RNDRNG_PHYSN_UPIN
+		dataType: string
+		lineageTag: 853e61c9-e50b-4e92-9334-9e264ff81e6d
+		summarizeBy: none
+		sourceColumn: RNDRNG_PHYSN_UPIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column RNDRNG_PHYSN_NPI
+		dataType: int64
+		formatString: 0
+		lineageTag: 164a418f-926a-4d6e-9fb4-fc5ae8ded6c1
+		summarizeBy: sum
+		sourceColumn: RNDRNG_PHYSN_NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	partition outpatient = m
+		mode: import
+		source =
+				let
+				    Source = Folder.Files("C:\Users\dpnsh\Downloads\All FFS Claims"),
+				    #"C:\Users\dpnsh\Downloads\All FFS Claims\_outpatient csv1" = Source{[#"Folder Path"="C:\Users\dpnsh\Downloads\All FFS Claims\",Name="outpatient.csv"]}[Content],
+				    #"Imported CSV" = Csv.Document(#"C:\Users\dpnsh\Downloads\All FFS Claims\_outpatient csv1",[Delimiter="|", Columns=162, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Imported CSV", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"BENE_ID", Int64.Type}, {"CLM_ID", Int64.Type}, {"NCH_NEAR_LINE_REC_IDENT_CD", type text}, {"NCH_CLM_TYPE_CD", Int64.Type}, {"CLM_FROM_DT", type date}, {"CLM_THRU_DT", type date}, {"NCH_WKLY_PROC_DT", type date}, {"FI_CLM_PROC_DT", type text}, {"CLAIM_QUERY_CODE", Int64.Type}, {"PRVDR_NUM", type text}, {"CLM_FAC_TYPE_CD", Int64.Type}, {"CLM_SRVC_CLSFCTN_TYPE_CD", Int64.Type}, {"CLM_FREQ_CD", Int64.Type}, {"FI_NUM", type text}, {"CLM_MDCR_NON_PMT_RSN_CD", type text}, {"CLM_PMT_AMT", type number}, {"NCH_PRMRY_PYR_CLM_PD_AMT", type number}, {"NCH_PRMRY_PYR_CD", type text}, {"PRVDR_STATE_CD", Int64.Type}, {"ORG_NPI_NUM", Int64.Type}, {"AT_PHYSN_UPIN", type text}, {"AT_PHYSN_NPI", Int64.Type}, {"OP_PHYSN_UPIN", type text}, {"OP_PHYSN_NPI", Int64.Type}, {"OT_PHYSN_UPIN", type text}, {"OT_PHYSN_NPI", type text}, {"CLM_MCO_PD_SW", Int64.Type}, {"PTNT_DSCHRG_STUS_CD", Int64.Type}, {"CLM_TOT_CHRG_AMT", type number}, {"NCH_BENE_BLOOD_DDCTBL_LBLTY_AM", Int64.Type}, {"NCH_PROFNL_CMPNT_CHRG_AMT", Int64.Type}, {"PRNCPAL_DGNS_CD", type text}, {"ICD_DGNS_CD1", type text}, {"ICD_DGNS_CD2", type text}, {"ICD_DGNS_CD3", type text}, {"ICD_DGNS_CD4", type text}, {"ICD_DGNS_CD5", type text}, {"ICD_DGNS_CD6", type text}, {"ICD_DGNS_CD7", type text}, {"ICD_DGNS_CD8", type text}, {"ICD_DGNS_CD9", type text}, {"ICD_DGNS_CD10", type text}, {"ICD_DGNS_CD11", type text}, {"ICD_DGNS_CD12", type text}, {"ICD_DGNS_CD13", type text}, {"ICD_DGNS_CD14", type text}, {"ICD_DGNS_CD15", type text}, {"ICD_DGNS_CD16", type text}, {"ICD_DGNS_CD17", type text}, {"ICD_DGNS_CD18", type text}, {"ICD_DGNS_CD19", type text}, {"ICD_DGNS_CD20", type text}, {"ICD_DGNS_CD21", type text}, {"ICD_DGNS_CD22", type text}, {"ICD_DGNS_CD23", type text}, {"ICD_DGNS_CD24", type text}, {"ICD_DGNS_CD25", type text}, {"FST_DGNS_E_CD", type text}, {"ICD_DGNS_E_CD1", type text}, {"ICD_DGNS_E_CD2", type text}, {"ICD_DGNS_E_CD3", type text}, {"ICD_DGNS_E_CD4", type text}, {"ICD_DGNS_E_CD5", type text}, {"ICD_DGNS_E_CD6", type text}, {"ICD_DGNS_E_CD7", type text}, {"ICD_DGNS_E_CD8", type text}, {"ICD_DGNS_E_CD9", type text}, {"ICD_DGNS_E_CD10", type text}, {"ICD_DGNS_E_CD11", type text}, {"ICD_DGNS_E_CD12", type text}, {"ICD_PRCDR_CD1", type text}, {"PRCDR_DT1", type date}, {"ICD_PRCDR_CD2", type text}, {"PRCDR_DT2", type date}, {"ICD_PRCDR_CD3", type text}, {"PRCDR_DT3", type date}, {"ICD_PRCDR_CD4", type text}, {"PRCDR_DT4", type text}, {"ICD_PRCDR_CD5", type text}, {"PRCDR_DT5", type text}, {"ICD_PRCDR_CD6", type text}, {"PRCDR_DT6", type text}, {"ICD_PRCDR_CD7", type text}, {"PRCDR_DT7", type text}, {"ICD_PRCDR_CD8", type text}, {"PRCDR_DT8", type text}, {"ICD_PRCDR_CD9", type text}, {"PRCDR_DT9", type text}, {"ICD_PRCDR_CD10", type text}, {"PRCDR_DT10", type text}, {"ICD_PRCDR_CD11", type text}, {"PRCDR_DT11", type text}, {"ICD_PRCDR_CD12", type text}, {"PRCDR_DT12", type text}, {"ICD_PRCDR_CD13", type text}, {"PRCDR_DT13", type text}, {"ICD_PRCDR_CD14", type text}, {"PRCDR_DT14", type text}, {"ICD_PRCDR_CD15", type text}, {"PRCDR_DT15", type text}, {"ICD_PRCDR_CD16", type text}, {"PRCDR_DT16", type text}, {"ICD_PRCDR_CD17", type text}, {"PRCDR_DT17", type text}, {"ICD_PRCDR_CD18", type text}, {"PRCDR_DT18", type text}, {"ICD_PRCDR_CD19", type text}, {"PRCDR_DT19", type text}, {"ICD_PRCDR_CD20", type text}, {"PRCDR_DT20", type text}, {"ICD_PRCDR_CD21", type text}, {"PRCDR_DT21", type text}, {"ICD_PRCDR_CD22", type text}, {"PRCDR_DT22", type text}, {"ICD_PRCDR_CD23", type text}, {"PRCDR_DT23", type text}, {"ICD_PRCDR_CD24", type text}, {"PRCDR_DT24", type text}, {"ICD_PRCDR_CD25", type text}, {"PRCDR_DT25", type text}, {"RSN_VISIT_CD1", type text}, {"RSN_VISIT_CD2", type text}, {"RSN_VISIT_CD3", type text}, {"NCH_BENE_PTB_DDCTBL_AMT", type number}, {"NCH_BENE_PTB_COINSRNC_AMT", Int64.Type}, {"CLM_OP_PRVDR_PMT_AMT", type number}, {"CLM_OP_BENE_PMT_AMT", Int64.Type}, {"CLM_LINE_NUM", Int64.Type}, {"REV_CNTR", Int64.Type}, {"REV_CNTR_DT", type date}, {"REV_CNTR_1ST_ANSI_CD", type text}, {"REV_CNTR_2ND_ANSI_CD", type text}, {"REV_CNTR_3RD_ANSI_CD", type text}, {"REV_CNTR_4TH_ANSI_CD", type text}, {"REV_CNTR_APC_HIPPS_CD", type text}, {"HCPCS_CD", type text}, {"HCPCS_1ST_MDFR_CD", type text}, {"HCPCS_2ND_MDFR_CD", type text}, {"REV_CNTR_PMT_MTHD_IND_CD", Int64.Type}, {"REV_CNTR_DSCNT_IND_CD", type text}, {"REV_CNTR_PACKG_IND_CD", type text}, {"REV_CNTR_OTAF_PMT_CD", type text}, {"REV_CNTR_IDE_NDC_UPC_NUM", type text}, {"REV_CNTR_UNIT_CNT", Int64.Type}, {"REV_CNTR_RATE_AMT", type number}, {"REV_CNTR_BLOOD_DDCTBL_AMT", Int64.Type}, {"REV_CNTR_CASH_DDCTBL_AMT", type number}, {"REV_CNTR_COINSRNC_WGE_ADJSTD_C", type number}, {"REV_CNTR_RDCD_COINSRNC_AMT", type number}, {"REV_CNTR_1ST_MSP_PD_AMT", Int64.Type}, {"REV_CNTR_2ND_MSP_PD_AMT", Int64.Type}, {"REV_CNTR_PRVDR_PMT_AMT", type number}, {"REV_CNTR_BENE_PMT_AMT", Int64.Type}, {"REV_CNTR_PTNT_RSPNSBLTY_PMT", type number}, {"REV_CNTR_PMT_AMT_AMT", type number}, {"REV_CNTR_TOT_CHRG_AMT", type number}, {"REV_CNTR_NCVRD_CHRG_AMT", type number}, {"REV_CNTR_STUS_IND_CD", Int64.Type}, {"REV_CNTR_NDC_QTY", type text}, {"REV_CNTR_NDC_QTY_QLFR_CD", type text}, {"RNDRNG_PHYSN_UPIN", type text}, {"RNDRNG_PHYSN_NPI", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

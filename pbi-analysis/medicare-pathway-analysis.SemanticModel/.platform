@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "medicare-pathway-analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "64a6c717-1eb7-43dc-841c-52594c08be83"
+  }
+}

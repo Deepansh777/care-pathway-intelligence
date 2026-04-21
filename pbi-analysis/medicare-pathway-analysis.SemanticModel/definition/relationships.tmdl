@@ -1,0 +1,405 @@
+relationship af00e567-47f3-4245-b97e-3b16db0bae22
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'All FFS Claims'.'Date accessed'
+	toColumn: LocalDateTable_625006ee-0e4d-4c22-9363-f2ce03100bcf.Date
+
+relationship 8cfe77a1-61f0-4ec9-81fe-3079f907e23c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'All FFS Claims'.'Date modified'
+	toColumn: LocalDateTable_3d3647f2-9ff8-492f-8b0d-0112ba196981.Date
+
+relationship 71b245c8-5615-4c1f-ac81-3dc8303b4acf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'All FFS Claims'.'Date created'
+	toColumn: LocalDateTable_f7bd549f-8284-4516-b493-80bf39512313.Date
+
+relationship 24425aca-c814-4880-a037-dfdc78238388
+	joinOnDateBehavior: datePartOnly
+	fromColumn: carriers.CLM_FROM_DT
+	toColumn: LocalDateTable_ea882766-f97b-43ed-8157-10c00a9163c8.Date
+
+relationship 9d3ef0ec-5a8d-4a42-bcf0-16b4bd2f0201
+	joinOnDateBehavior: datePartOnly
+	fromColumn: carriers.CLM_THRU_DT
+	toColumn: LocalDateTable_fa6a5443-6e9e-4a0e-9fc0-352aa537227c.Date
+
+relationship 12ca482c-e4de-4256-8d13-c59741ebccca
+	joinOnDateBehavior: datePartOnly
+	fromColumn: carriers.NCH_WKLY_PROC_DT
+	toColumn: LocalDateTable_14e45c8d-d510-4f9a-bfce-51eff06c4f0f.Date
+
+relationship 602e181a-60d5-4f77-ba1c-ae1dc8d2dad5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: carriers.LINE_1ST_EXPNS_DT
+	toColumn: LocalDateTable_799be9be-bb87-44f9-b54f-be16f990b71f.Date
+
+relationship ce01a392-edc7-4a86-93c7-0fe25208cd32
+	joinOnDateBehavior: datePartOnly
+	fromColumn: carriers.LINE_LAST_EXPNS_DT
+	toColumn: LocalDateTable_1f5bbff2-de36-4fa9-86f1-c21a3ceb0338.Date
+
+relationship 3c50d0e3-8d17-4c9a-999f-31b2287dacec
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dme.CLM_FROM_DT
+	toColumn: LocalDateTable_3c8aadec-e691-4ab1-b7ed-e1cd7d2c0259.Date
+
+relationship 26fd9c56-b0fc-4276-b829-e14cb33f9a09
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dme.CLM_THRU_DT
+	toColumn: LocalDateTable_7236f07f-78fe-4b0a-a593-f42868cd5cc8.Date
+
+relationship ecca3f08-7d1f-4feb-8498-789447c1b259
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dme.NCH_WKLY_PROC_DT
+	toColumn: LocalDateTable_fb6373ed-fd71-40e7-b62a-66283c147f96.Date
+
+relationship 6a079307-665b-445c-bf9d-af83e8d0656f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dme.LINE_1ST_EXPNS_DT
+	toColumn: LocalDateTable_a4fc84bc-6325-4bef-ab87-e06d35bbf1bc.Date
+
+relationship 39589aa6-9dc5-4919-9a5a-b14306cec11b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dme.LINE_LAST_EXPNS_DT
+	toColumn: LocalDateTable_31877bcf-9bf3-46ca-802a-b1d57f585460.Date
+
+relationship 78517829-2900-4d8b-a20d-440d422fba5c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hha.CLM_FROM_DT
+	toColumn: LocalDateTable_e5918c10-9965-4096-af07-541fbe561649.Date
+
+relationship 13037cac-74ee-43ff-9510-5736e0cdd8f8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hha.CLM_THRU_DT
+	toColumn: LocalDateTable_15b790bc-ade2-4ab1-85a0-ac695241556d.Date
+
+relationship 4d7fb7ee-1ab2-4178-b43e-19cabc25b4bb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hha.NCH_WKLY_PROC_DT
+	toColumn: LocalDateTable_b4f1ea2b-00a2-43ff-8221-2288187f8a2c.Date
+
+relationship 61460481-042e-4cce-b0a3-1f109a661d7c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hha.CLM_ADMSN_DT
+	toColumn: LocalDateTable_72f321bf-7b66-4d58-a9dc-5bc2e56006b2.Date
+
+relationship 388234bd-2461-4bb7-ac37-a9f2fb22470f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hha.REV_CNTR_DT
+	toColumn: LocalDateTable_744f473c-a361-4e1e-91a5-76693ebc7c13.Date
+
+relationship 43385645-232d-40aa-a2c6-6996f04ff88a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hospice.CLM_FROM_DT
+	toColumn: LocalDateTable_0d76e566-3a5c-4c0f-9c1a-1bf942d9b136.Date
+
+relationship 14b0d925-4ff7-4e9d-8e2b-49a4ffbe12c2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hospice.CLM_THRU_DT
+	toColumn: LocalDateTable_5bd205e6-4dd7-4da0-af11-beced0ce6d35.Date
+
+relationship 55aacf7e-666f-42ed-80de-94df8e73a926
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hospice.NCH_WKLY_PROC_DT
+	toColumn: LocalDateTable_88f41b7b-01cc-4fd9-b998-ec37a2d8a908.Date
+
+relationship 1a0fcac2-e3ad-4ab4-8ad4-a729164e13f4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hospice.NCH_BENE_DSCHRG_DT
+	toColumn: LocalDateTable_93540a5f-b1be-4846-89ce-dc8bb62d7132.Date
+
+relationship 93564120-b8d0-47a3-86d8-26b93ca9950f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hospice.CLM_HOSPC_START_DT_ID
+	toColumn: LocalDateTable_12403a46-992c-4d35-ba7e-6293e1804456.Date
+
+relationship 7c8c9e55-7bae-47df-b486-c13c4d2596b2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: hospice.REV_CNTR_DT
+	toColumn: LocalDateTable_5b814365-6a05-480d-9ae0-6ea145574e2e.Date
+
+relationship 451fde10-63fb-4760-a893-627fc81376ab
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.CLM_FROM_DT
+	toColumn: LocalDateTable_c2c90069-972b-4e8b-86f0-c0f9ab3d05d2.Date
+
+relationship 90e8b61a-1cf0-4212-b51d-982b201398bd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.CLM_THRU_DT
+	toColumn: LocalDateTable_2c95e25f-daf2-4a22-8beb-fd6e40f924a3.Date
+
+relationship 626ece5f-a3ae-45d8-a002-fcfae8b9f009
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.NCH_WKLY_PROC_DT
+	toColumn: LocalDateTable_3af4f543-baef-45cd-ad9f-7fb1531f8c86.Date
+
+relationship e8ab784c-c17e-4cc1-9090-5dbdd1765339
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.CLM_ADMSN_DT
+	toColumn: LocalDateTable_d3e7daab-d1f1-4ea5-84aa-b0d7a6e92d07.Date
+
+relationship ec2281e5-5c4c-4bb0-9b86-79b0f77e6a00
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.NCH_BENE_DSCHRG_DT
+	toColumn: LocalDateTable_9760b366-e94e-4fb1-8505-fd6c91d3718f.Date
+
+relationship 4d3b3969-ce63-43ff-afc0-a15736b2a044
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT1
+	toColumn: LocalDateTable_84f4130b-9eeb-461d-9505-44c2f7f51c84.Date
+
+relationship 988b6039-7aef-4eb9-ab95-72bda2edad4c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT2
+	toColumn: LocalDateTable_67c256e6-bd37-4dd4-a066-df2d423e3910.Date
+
+relationship 864f9ad3-38e2-4096-b6be-1212359f3603
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT3
+	toColumn: LocalDateTable_1ba54e38-83b5-4829-b83b-f7af8c45cb8d.Date
+
+relationship 099dd0d2-6979-41a8-9ff1-bd3a7898f490
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT4
+	toColumn: LocalDateTable_9472ae43-4416-44c4-aa09-aff89c43674a.Date
+
+relationship 9322e697-8b1c-4543-859a-8f4eb8f6c21b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT5
+	toColumn: LocalDateTable_49000417-ed6f-4a6a-a7ed-ee31a2108cfe.Date
+
+relationship faa09760-d809-4ff1-841a-40aabef393ca
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT6
+	toColumn: LocalDateTable_543a0711-33f8-4596-b2a3-d9c49e283940.Date
+
+relationship a57bb80a-97f0-4189-9e4f-04bdce97362f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT7
+	toColumn: LocalDateTable_fcb99125-7f9a-44a8-9b9d-b0b8e2008006.Date
+
+relationship 441d9c8a-a58f-4560-837f-01268681c61d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT8
+	toColumn: LocalDateTable_91831a81-2f66-4bc4-a677-e05de5969e5e.Date
+
+relationship 562b8b79-1a3f-48e5-9577-315c1d84c2a0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT9
+	toColumn: LocalDateTable_392a72c2-c517-47d4-b708-527c48ca4732.Date
+
+relationship 0f9cf09b-d479-4129-a82b-1202f1336ffd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT10
+	toColumn: LocalDateTable_97adac96-a1d1-40e5-81c7-c52a8058cb66.Date
+
+relationship 8be48f13-cc6e-48ce-8984-907ae23a2649
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT11
+	toColumn: LocalDateTable_8e21340b-9365-47fb-bb0a-7812156f4c3c.Date
+
+relationship 9a71761a-ace3-40bc-8152-23072cb86e60
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT12
+	toColumn: LocalDateTable_946dac93-09ab-485a-844c-1a73ca6d3698.Date
+
+relationship 63341f14-da50-415c-91d6-e7d0210d5e65
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT13
+	toColumn: LocalDateTable_eee95d77-6e10-4ab8-96bd-a5e05c077477.Date
+
+relationship 8f0820e9-f1e6-4514-8ba8-ecfd3188ec23
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT14
+	toColumn: LocalDateTable_974783e8-5f59-463f-ad1e-5cc9648bf4ef.Date
+
+relationship dde7345e-dee7-45ef-a25e-37a6b178eca3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: inpatient.PRCDR_DT15
+	toColumn: LocalDateTable_d378d272-af3d-4138-8eeb-f831d339ac5d.Date
+
+relationship faa51a11-9c51-48bd-a99e-23b33d6961b1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: outpatient.CLM_FROM_DT
+	toColumn: LocalDateTable_8cda6035-10cc-4ff6-bf0e-bcee857d40e2.Date
+
+relationship 7a96b4c2-f0bc-4031-9988-f66b291bf643
+	joinOnDateBehavior: datePartOnly
+	fromColumn: outpatient.CLM_THRU_DT
+	toColumn: LocalDateTable_1b7656d7-5cd6-4f92-9223-b76c49b3ec00.Date
+
+relationship 8e5b1b64-1ce3-40ee-93fc-81433724a22e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: outpatient.NCH_WKLY_PROC_DT
+	toColumn: LocalDateTable_8033439a-f1e5-4287-a381-182343366351.Date
+
+relationship 192243e0-c756-4086-9362-c50d71be0edb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: outpatient.PRCDR_DT1
+	toColumn: LocalDateTable_6c0b9d63-d63f-4aac-84b6-1e0746301c6c.Date
+
+relationship 9f2c6e80-93df-4921-9e2a-721ca2bc2f6d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: outpatient.PRCDR_DT2
+	toColumn: LocalDateTable_efb4280f-11dd-4804-a847-fae3cb266fb5.Date
+
+relationship 0a768b12-efbb-4944-a556-ee0a887e8c5c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: outpatient.PRCDR_DT3
+	toColumn: LocalDateTable_b2e2cd63-33d2-498f-b8ca-4b63e76e2dbd.Date
+
+relationship a8f38472-7826-46c1-aa13-0a855935f4b4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: outpatient.REV_CNTR_DT
+	toColumn: LocalDateTable_239f30e5-ab9a-4db3-90cc-efb6959e831c.Date
+
+relationship 14baa42e-fb18-4619-899f-41dee9de3fe5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.CLM_FROM_DT
+	toColumn: LocalDateTable_0198f89b-fdec-4361-8cfa-2ebdee3f9047.Date
+
+relationship c9ac7ecd-1f53-4948-8f09-e6afafcb6114
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.CLM_THRU_DT
+	toColumn: LocalDateTable_816242da-6415-4798-a989-5e4afd60fc1f.Date
+
+relationship bf5f6a4d-3ef2-4c57-87f0-5180fb4b9bc2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.NCH_WKLY_PROC_DT
+	toColumn: LocalDateTable_5083e219-43d7-4a99-b231-c51b14d5dac5.Date
+
+relationship b913f012-397b-4b76-a7d0-5a126d328b39
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.CLM_ADMSN_DT
+	toColumn: LocalDateTable_b259731e-e79b-43e9-85fb-394e65a66fcb.Date
+
+relationship 30557dbb-c3f1-4afe-aee4-109e38425baf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.NCH_BENE_DSCHRG_DT
+	toColumn: LocalDateTable_434d60ad-2aab-4b39-9fd0-8dbe2fe39667.Date
+
+relationship 65087fd9-2e0a-4d1d-b1bd-d894fc0fd715
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT1
+	toColumn: LocalDateTable_67849f58-e120-4390-baa8-c966ead4ef87.Date
+
+relationship 7b3fa010-258e-483c-a42b-d8933286aae3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT2
+	toColumn: LocalDateTable_cc03a9e0-ef51-4de3-ae47-10f9c1606c71.Date
+
+relationship e4604dd9-3e78-40c7-902b-618071dddb8d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT3
+	toColumn: LocalDateTable_65c0bf9a-1e56-48ef-8d4a-7d024feb95cb.Date
+
+relationship 943dcbb2-3536-4ff9-9d4c-db44096399b9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT4
+	toColumn: LocalDateTable_8cfa7854-0f53-4862-91b9-c9255873015c.Date
+
+relationship c8fd855d-363a-4e46-827d-e995bb7a653b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT5
+	toColumn: LocalDateTable_b6c03e67-9a4d-497c-b1c9-37e706269156.Date
+
+relationship 10cd209b-d664-42d2-b77a-1f6ad1b8fd80
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT6
+	toColumn: LocalDateTable_42491678-5415-4360-bbf3-f7e5bea42053.Date
+
+relationship bff5f948-107e-4a64-b217-d75d2ad6c360
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT7
+	toColumn: LocalDateTable_d3d38fce-4ba7-42ee-b1cb-17f0c60d1c77.Date
+
+relationship 7dce5bef-a69f-4997-96f9-3d6dfe6054e6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT8
+	toColumn: LocalDateTable_b32d4291-e358-468d-9942-be074c5f49dc.Date
+
+relationship c6570805-7d13-49ea-b7a5-fcbfa20dc0f9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT9
+	toColumn: LocalDateTable_e800eb58-d82a-4e50-a717-8724a9324312.Date
+
+relationship 9809253d-09b5-4403-9d9e-6b5ad08a0e2e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT10
+	toColumn: LocalDateTable_fd63a02f-b837-4c8a-8343-d6afe2ba1eab.Date
+
+relationship b35e5cba-1f46-458d-899f-77366b3bd857
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT11
+	toColumn: LocalDateTable_7ae63bbe-246b-49d6-8dff-349b344f575b.Date
+
+relationship daaf7322-d87e-4378-bf7c-3be754fd8376
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT12
+	toColumn: LocalDateTable_c902bd31-10c1-4a81-b134-8404ec834ca0.Date
+
+relationship 4c1e2653-369c-4b07-807f-e704b3598e2e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT13
+	toColumn: LocalDateTable_6a390dce-9d7d-442e-b418-f5c920c85d95.Date
+
+relationship 6ce44e00-2444-40b7-a235-78c70dcef3d6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT14
+	toColumn: LocalDateTable_9645cc2b-6cf6-42cb-a01c-bc4a8517f159.Date
+
+relationship 612b370f-1987-459f-a4e8-42cc765bcf1c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT15
+	toColumn: LocalDateTable_ca9ce929-e758-43c8-86c1-e89249888483.Date
+
+relationship 96189263-58d0-4aa1-9769-8f462f7041cf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT16
+	toColumn: LocalDateTable_48db791a-3a81-4586-a3cf-3b24c4671572.Date
+
+relationship 386d76de-7f24-40b5-a815-44bab5cf82d7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT17
+	toColumn: LocalDateTable_7868bff4-aeb7-405a-866a-1c9c8ad24825.Date
+
+relationship 41858f41-2606-4bb7-9ab6-236f28e4ba11
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT18
+	toColumn: LocalDateTable_59323a4a-91b4-4389-9d9c-dd7c067db923.Date
+
+relationship 100a1340-1833-4280-a00b-a31567333a1d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT19
+	toColumn: LocalDateTable_845cd6cf-7f27-4706-83fe-a9809e11a750.Date
+
+relationship 0769bd26-bc5f-41d8-99c3-0cc78701ec14
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT20
+	toColumn: LocalDateTable_0091d6f5-2157-40d8-b317-d884ce300a66.Date
+
+relationship 26f8c597-7a81-45e7-ae8a-28641a1a72e1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT21
+	toColumn: LocalDateTable_6b5e924d-a9d8-45fc-b663-8f663612bf45.Date
+
+relationship da071b10-8442-4483-8151-2103e6872d32
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT22
+	toColumn: LocalDateTable_0c96e677-8a33-467b-affd-a2e760d82dd5.Date
+
+relationship 71ee454d-279e-487b-9347-8683a2c32364
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT23
+	toColumn: LocalDateTable_9170e272-e332-41b9-9ac4-59db030bac3b.Date
+
+relationship 2a23fac3-e34d-4a88-a158-6d929694e46e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT24
+	toColumn: LocalDateTable_5e0164fa-e3bc-4d38-8fe1-48bc35ffbfd0.Date
+
+relationship 8af52bce-33e6-45f0-bc2c-4bfb99ac3ce9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: snf.PRCDR_DT25
+	toColumn: LocalDateTable_f1d5f89c-e80d-412d-a350-16c080fc89a7.Date
+

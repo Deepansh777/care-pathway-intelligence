@@ -1,0 +1,107 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["All FFS Claims","carriers","dme","hha","hospice","inpatient","outpatient","snf"]
+
+ref table 'All FFS Claims'
+ref table DateTableTemplate_e010e19d-46a9-4875-b3e9-f08bee0dda57
+ref table LocalDateTable_625006ee-0e4d-4c22-9363-f2ce03100bcf
+ref table LocalDateTable_3d3647f2-9ff8-492f-8b0d-0112ba196981
+ref table LocalDateTable_f7bd549f-8284-4516-b493-80bf39512313
+ref table carriers
+ref table LocalDateTable_ea882766-f97b-43ed-8157-10c00a9163c8
+ref table LocalDateTable_fa6a5443-6e9e-4a0e-9fc0-352aa537227c
+ref table LocalDateTable_14e45c8d-d510-4f9a-bfce-51eff06c4f0f
+ref table LocalDateTable_799be9be-bb87-44f9-b54f-be16f990b71f
+ref table LocalDateTable_1f5bbff2-de36-4fa9-86f1-c21a3ceb0338
+ref table dme
+ref table LocalDateTable_3c8aadec-e691-4ab1-b7ed-e1cd7d2c0259
+ref table LocalDateTable_7236f07f-78fe-4b0a-a593-f42868cd5cc8
+ref table LocalDateTable_fb6373ed-fd71-40e7-b62a-66283c147f96
+ref table LocalDateTable_a4fc84bc-6325-4bef-ab87-e06d35bbf1bc
+ref table LocalDateTable_31877bcf-9bf3-46ca-802a-b1d57f585460
+ref table hha
+ref table LocalDateTable_e5918c10-9965-4096-af07-541fbe561649
+ref table LocalDateTable_15b790bc-ade2-4ab1-85a0-ac695241556d
+ref table LocalDateTable_b4f1ea2b-00a2-43ff-8221-2288187f8a2c
+ref table LocalDateTable_72f321bf-7b66-4d58-a9dc-5bc2e56006b2
+ref table LocalDateTable_744f473c-a361-4e1e-91a5-76693ebc7c13
+ref table hospice
+ref table LocalDateTable_0d76e566-3a5c-4c0f-9c1a-1bf942d9b136
+ref table LocalDateTable_5bd205e6-4dd7-4da0-af11-beced0ce6d35
+ref table LocalDateTable_88f41b7b-01cc-4fd9-b998-ec37a2d8a908
+ref table LocalDateTable_93540a5f-b1be-4846-89ce-dc8bb62d7132
+ref table LocalDateTable_12403a46-992c-4d35-ba7e-6293e1804456
+ref table LocalDateTable_5b814365-6a05-480d-9ae0-6ea145574e2e
+ref table inpatient
+ref table LocalDateTable_c2c90069-972b-4e8b-86f0-c0f9ab3d05d2
+ref table LocalDateTable_2c95e25f-daf2-4a22-8beb-fd6e40f924a3
+ref table LocalDateTable_3af4f543-baef-45cd-ad9f-7fb1531f8c86
+ref table LocalDateTable_d3e7daab-d1f1-4ea5-84aa-b0d7a6e92d07
+ref table LocalDateTable_9760b366-e94e-4fb1-8505-fd6c91d3718f
+ref table LocalDateTable_84f4130b-9eeb-461d-9505-44c2f7f51c84
+ref table LocalDateTable_67c256e6-bd37-4dd4-a066-df2d423e3910
+ref table LocalDateTable_1ba54e38-83b5-4829-b83b-f7af8c45cb8d
+ref table LocalDateTable_9472ae43-4416-44c4-aa09-aff89c43674a
+ref table LocalDateTable_49000417-ed6f-4a6a-a7ed-ee31a2108cfe
+ref table LocalDateTable_543a0711-33f8-4596-b2a3-d9c49e283940
+ref table LocalDateTable_fcb99125-7f9a-44a8-9b9d-b0b8e2008006
+ref table LocalDateTable_91831a81-2f66-4bc4-a677-e05de5969e5e
+ref table LocalDateTable_392a72c2-c517-47d4-b708-527c48ca4732
+ref table LocalDateTable_97adac96-a1d1-40e5-81c7-c52a8058cb66
+ref table LocalDateTable_8e21340b-9365-47fb-bb0a-7812156f4c3c
+ref table LocalDateTable_946dac93-09ab-485a-844c-1a73ca6d3698
+ref table LocalDateTable_eee95d77-6e10-4ab8-96bd-a5e05c077477
+ref table LocalDateTable_974783e8-5f59-463f-ad1e-5cc9648bf4ef
+ref table LocalDateTable_d378d272-af3d-4138-8eeb-f831d339ac5d
+ref table outpatient
+ref table LocalDateTable_8cda6035-10cc-4ff6-bf0e-bcee857d40e2
+ref table LocalDateTable_1b7656d7-5cd6-4f92-9223-b76c49b3ec00
+ref table LocalDateTable_8033439a-f1e5-4287-a381-182343366351
+ref table LocalDateTable_6c0b9d63-d63f-4aac-84b6-1e0746301c6c
+ref table LocalDateTable_efb4280f-11dd-4804-a847-fae3cb266fb5
+ref table LocalDateTable_b2e2cd63-33d2-498f-b8ca-4b63e76e2dbd
+ref table LocalDateTable_239f30e5-ab9a-4db3-90cc-efb6959e831c
+ref table snf
+ref table LocalDateTable_0198f89b-fdec-4361-8cfa-2ebdee3f9047
+ref table LocalDateTable_816242da-6415-4798-a989-5e4afd60fc1f
+ref table LocalDateTable_5083e219-43d7-4a99-b231-c51b14d5dac5
+ref table LocalDateTable_b259731e-e79b-43e9-85fb-394e65a66fcb
+ref table LocalDateTable_434d60ad-2aab-4b39-9fd0-8dbe2fe39667
+ref table LocalDateTable_67849f58-e120-4390-baa8-c966ead4ef87
+ref table LocalDateTable_cc03a9e0-ef51-4de3-ae47-10f9c1606c71
+ref table LocalDateTable_65c0bf9a-1e56-48ef-8d4a-7d024feb95cb
+ref table LocalDateTable_8cfa7854-0f53-4862-91b9-c9255873015c
+ref table LocalDateTable_b6c03e67-9a4d-497c-b1c9-37e706269156
+ref table LocalDateTable_42491678-5415-4360-bbf3-f7e5bea42053
+ref table LocalDateTable_d3d38fce-4ba7-42ee-b1cb-17f0c60d1c77
+ref table LocalDateTable_b32d4291-e358-468d-9942-be074c5f49dc
+ref table LocalDateTable_e800eb58-d82a-4e50-a717-8724a9324312
+ref table LocalDateTable_fd63a02f-b837-4c8a-8343-d6afe2ba1eab
+ref table LocalDateTable_7ae63bbe-246b-49d6-8dff-349b344f575b
+ref table LocalDateTable_c902bd31-10c1-4a81-b134-8404ec834ca0
+ref table LocalDateTable_6a390dce-9d7d-442e-b418-f5c920c85d95
+ref table LocalDateTable_9645cc2b-6cf6-42cb-a01c-bc4a8517f159
+ref table LocalDateTable_ca9ce929-e758-43c8-86c1-e89249888483
+ref table LocalDateTable_48db791a-3a81-4586-a3cf-3b24c4671572
+ref table LocalDateTable_7868bff4-aeb7-405a-866a-1c9c8ad24825
+ref table LocalDateTable_59323a4a-91b4-4389-9d9c-dd7c067db923
+ref table LocalDateTable_845cd6cf-7f27-4706-83fe-a9809e11a750
+ref table LocalDateTable_0091d6f5-2157-40d8-b317-d884ce300a66
+ref table LocalDateTable_6b5e924d-a9d8-45fc-b663-8f663612bf45
+ref table LocalDateTable_0c96e677-8a33-467b-affd-a2e760d82dd5
+ref table LocalDateTable_9170e272-e332-41b9-9ac4-59db030bac3b
+ref table LocalDateTable_5e0164fa-e3bc-4d38-8fe1-48bc35ffbfd0
+ref table LocalDateTable_f1d5f89c-e80d-412d-a350-16c080fc89a7
+
+ref cultureInfo en-US
+

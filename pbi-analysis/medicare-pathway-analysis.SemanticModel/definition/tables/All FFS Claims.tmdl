@@ -1,0 +1,81 @@
+table 'All FFS Claims'
+	lineageTag: 36a0013b-0c6c-4306-9940-20b6235c0de9
+
+	column Name
+		dataType: string
+		lineageTag: d1be4fd2-9bd0-4ba8-8b0c-905748d043d3
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Extension
+		dataType: string
+		lineageTag: ff52404d-8fac-404b-87be-5144fd674299
+		summarizeBy: none
+		sourceColumn: Extension
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date accessed'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4e5fac70-07e5-4496-979b-108e6cdcfcd8
+		summarizeBy: none
+		sourceColumn: Date accessed
+
+		variation Variation
+			isDefault
+			relationship: af00e567-47f3-4245-b97e-3b16db0bae22
+			defaultHierarchy: LocalDateTable_625006ee-0e4d-4c22-9363-f2ce03100bcf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date modified'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a7ec3f9d-a2f5-42f2-b0da-cebac949e383
+		summarizeBy: none
+		sourceColumn: Date modified
+
+		variation Variation
+			isDefault
+			relationship: 8cfe77a1-61f0-4ec9-81fe-3079f907e23c
+			defaultHierarchy: LocalDateTable_3d3647f2-9ff8-492f-8b0d-0112ba196981.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date created'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3d8068d6-aa7e-4c48-a7f0-0ee13617cda1
+		summarizeBy: none
+		sourceColumn: Date created
+
+		variation Variation
+			isDefault
+			relationship: 71b245c8-5615-4c1f-ac81-3dc8303b4acf
+			defaultHierarchy: LocalDateTable_f7bd549f-8284-4516-b493-80bf39512313.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Folder Path'
+		dataType: string
+		lineageTag: 2be61a1e-f8b3-4b8c-aca9-e0922a105b6b
+		summarizeBy: none
+		sourceColumn: Folder Path
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'All FFS Claims' = m
+		mode: import
+		source =
+				let
+				    Source = Folder.Files("C:\Users\dpnsh\Downloads\All FFS Claims")
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
